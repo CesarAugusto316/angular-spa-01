@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  --font-family: "Poppins", sans-serif;
+  --primary: rgb(55, 124, 251);
+  --primary-focus: rgb(5, 87, 240);
+  --primary-content: rgb(28, 40, 63);
+  --secondary: rgb(102, 204, 138);
+  --secondary-focus: rgb(61, 184, 104);
+  --secondary-content: rgb(40, 71, 56);
+  --accent: rgb(234, 82, 52);
+  --neutral: rgb(42, 42, 42);
+  --neutral-content: rgb(148, 152, 203);
+  --primary-shadow: rgba(3, 69, 190, 0.6);
+}
+
+[data-theme="dark"] {
+  --base-100: rgb(23, 27, 35);
+  --base-150: rgb(42, 48, 60);
+  --base-200: rgb(36, 41, 51);
+  --base-300: rgb(31, 36, 45);
+  --base-400: rgb(15, 15, 27);
+  --base-content: rgb(166, 173, 186);
+  --base-shadow: rgba(35, 35, 35, 0.4);
+}
+
+[data-theme="light"] {
+  --base-100: rgb(253, 253, 253);
+  --base-150: rgb(247, 247, 247);
+  --base-200: rgb(230, 230, 230);
+  --base-300: rgb(207, 207, 207);
+  --base-400: rgb(184, 185, 190);
+  --base-content: rgb(59, 62, 95);
+  --base-shadow: rgba(46, 55, 74, 0.1);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  border: none;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+app-root {
+  font-family: var(--font-family);
+  color: var(--base-content);
+  font-size: 1.6rem;
+  background-color: var(--base-150);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  width: 10px;
+  background-color: var(--base-200);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--base-400);
+  display: block;
+  min-height: 40px;
+  border-radius: 10rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-shadow);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 2px solid var(--primary);
+  box-shadow: 0px 0px 10px 0px var(--primary-shadow); */
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 59%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 56%;
+  }
+}
