@@ -1,6 +1,5 @@
 .task {
   background: var(--base-300);
-  margin: 1rem 0rem;
   padding: 1.6rem;
   border-radius: 0.8rem;
 }
@@ -9,12 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0.6rem 0rem;
+}
+
+.reminder {
+  border-left: 5px solid var(--secondary);
 }
 
 .x-icon {
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .x-icon:hover {

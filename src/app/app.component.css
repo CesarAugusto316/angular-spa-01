@@ -1,7 +1,13 @@
-.container {
-  width: 50rem;
+.tasks-container {
+  width: 46rem;
   padding: 3rem;
   background-color: var(--base-200);
   box-shadow: 1px 1px 8px var(--base-shadow);
   border-radius: 1rem;
+}
+
+app-tasks {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.2rem;
 }

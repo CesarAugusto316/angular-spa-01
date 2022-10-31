@@ -52,7 +52,7 @@
 app-root {
   font-family: var(--font-family);
   color: var(--base-content);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   background-color: var(--base-150);
   min-height: 100vh;
   width: 100%;
@@ -102,6 +102,26 @@ a {
   cursor: pointer;
   justify-content: center;
   align-items: center;
+}
+
+input[type="text"] {
+  background-color: var(--base-300);
+  color: var(--base-content);
+  padding: 0.8rem 1.6rem;
+  width: 60%;
+  display: inline-block;
+  border-radius: 0.6rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container {
+  width: 60%;
 }
 
 @media screen and (max-width: 900px) {

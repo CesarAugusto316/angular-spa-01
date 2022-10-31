@@ -1,0 +1,15 @@
+form {
+  margin-bottom: 2.6rem;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  font-weight: 800;
+  width: 100%;
+  border-radius: 0.6rem;
+}
